@@ -24,7 +24,7 @@ a {
     width: 100%;
     height: 85px;
     background: #ee1420;
-    border-bottom: 4px black solid;
+    border-bottom: 5px black solid;
 }
 
 .navbar h1 {
@@ -57,6 +57,7 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    transition: 0.8s;
 }
 
 .current {
@@ -91,7 +92,7 @@ a {
     width: 100%;
     height: 150px;
     background: #ee1420;
-    border-top: 3px black solid;
+    border-top: 5px black solid;
 }
 
 .info {

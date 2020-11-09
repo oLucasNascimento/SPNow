@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPNow - Home</title>
+    <link rel="shortcut icon" href="../img/saopaulo.png">
+    <link rel="stylesheet" href="../css/navs.css">
+    <link rel="stylesheet" href="../css/home.css">
 </head>
 
 <body>
-    <link rel="stylesheet" href="../css/navs.css">
-    <link rel="stylesheet" href="../css/home.css">
+
 
 
     <!--Navbar-->
@@ -26,7 +28,7 @@
                 <ul>
                     <li><a href="home.html" class="current">Home</a></li>
                     <li><a href="historia.html">História</a></li>
-                    <li><a href="jogadores.html">Jogadores</a></li>
+                    <li><a href="idolos.html">Ídolos</a></li>
                     <li><a href="titulos.html">Títulos</a></li>
                     <li><a href="sobre.html">Sobre Mim</a></li>
                 </ul>
@@ -39,11 +41,9 @@
     <!--Conteúdo 1-->
 
     <div class="banner">
-        <div class="container">
-            <div class="conteudo1">
-                <h1>Página feita por um torcedor que acompanha e ama o maior campeão internacional do Brasil. Aqui você
-                    irá encontrar um pouco sobre a história do clube, jogadores lendarios e títulos marcantes.</h1>
-            </div>
+        <div class="conteudo1">
+            <h1>Página feita por um torcedor que acompanha e ama o maior campeão internacional do Brasil. Aqui você
+                irá encontrar um pouco sobre a história do clube, jogadores lendarios e títulos marcantes.</h1>
         </div>
     </div>
 
@@ -71,9 +71,12 @@
         <div class="container">
             <h2>Aqui você pode contar alguma experiência que viveu com o clube.</h2>
             <div class="campos">
-                <input placeholder="Nome"> <br>
-                <input placeholder="Email"> <br>
-                <textarea cols="50" rows="8" placeholder="Digite sua Mensagem"></textarea>
+                <form>
+                    <input placeholder="Nome"> <br>
+                    <input type="email" placeholder="Email"> <br>
+                    <textarea cols="50" rows="8" placeholder="Digite sua Mensagem"></textarea>
+                    <br> <button type="submit">Enviar</button>
+                </form>
             </div>
         </div>
     </div>
@@ -95,18 +98,24 @@
 
                 <div class="criador">
                     <h2>Criador</h2>
-                    <img src="../img/criador.jpg" alt="Criador">
+                    <a href="sobre.html">
+                        <img src="../img/criador.jpg" alt="Criador">
+                    </a>
                 </div>
 
                 <div class="redes">
-                    <a href="https://www.twitter.com" target="_blank"><img
-                            src="https://www.flaticon.com/svg/static/icons/svg/733/733579.svg"></a>
-                    <a href="https://www.instagram.com" target="_blank"><img
-                            src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg"></a>
-                    <a href="https://www.github.com" target="_blank"><img
-                            src="https://www.flaticon.com/svg/static/icons/svg/733/733553.svg"></a>
-                    <a href="https://www.facebook.com" target="_blank"><img
-                            src="https://www.flaticon.com/svg/static/icons/svg/2111/2111398.svg"></a>
+                    <a href="https://www.instagram.com/lusk.17/?hl=pt-br" target="_blank">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111463.svg" alt="instagram">
+                    </a>
+                    <a href="https://github.com/oLucasNascimento" target="_blank">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/733/733553.svg" alt="Github">
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100003311371683" target="_blank">
+                        <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111398.svg" alt="Facebook">
+                    </a>
+                    <a href="https://api.whatsapp.com/send?phone=5511980452057&text=Ol%C3%A1%20Lucas." target="_blank">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2504/2504957.svg" alt="Whatsapp">
+                    </a>
                 </div>
             </div>
         </div>
