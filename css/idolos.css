@@ -12,10 +12,80 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border-bottom: 5px black solid;   
 }
 
 .foco h1{
     font-size: xxx-large;
     color:whitesmoke;
+}
+
+.introducao {
+    width: 100%;
+    height: 200px;
+    border-top: 5px red solid;
+    background: black;
+}
+
+.textidolo {
+    width: 100%;
+    height:100%;
+    color:white;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.whitebox {
+    width: 100%;
+    height: 500px;
+    border-top: 5px red solid;
+}
+
+.textwhite {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    float: left;
+}
+
+.foto2 {
+    width: 33%;
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items: center;
+}
+
+.foto2 img {
+    width: 100%;
+}
+
+.blackbox {
+    width: 100%;
+    height: 500px;
+    background: black;
+    color: white;
+    border-top: 5px red solid;
+}
+
+.textblack {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    float: right;
+}
+
+.foto1 {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    float: left;
+}
+
+.foto1 img {
+    width: 100%;
 }
