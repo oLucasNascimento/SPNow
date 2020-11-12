@@ -54,11 +54,11 @@
     width: 65%;
 }
 
-.foto2 {
+.foto {
     width: 33%;
 }
 
-.foto2 img {
+.foto img {
     width: 100%;
 }
 
@@ -75,12 +75,4 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-}
-
-.foto1 {
-    width: 33%;
-}
-
-.foto1 img {
-    width: 100%;
 }
