@@ -32,7 +32,7 @@
     width: 80%;
     overflow: auto;
     margin: auto;
-    background:#dbdbdb;
+    background: #dbdbdb;
     border: 2px black solid;
 }
 
@@ -66,7 +66,6 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: ;
 }
 
 .descricao h3 {
@@ -76,12 +75,12 @@
 
 .estatisticas {
     width: 100%;
-    overflow:auto;
+    overflow: auto;
     display: flex;
 }
 
-.estatisticas h4{
-    margin:0;
+.estatisticas h4 {
+    margin: 0;
 }
 
 .boxtrofeu {
@@ -94,7 +93,7 @@
 }
 
 .boxtrofeu img {
-    width:45px;
+    width: 45px;
 }
 
 .trofeu {
@@ -130,4 +129,64 @@
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+}
+
+.nao_oficial {
+    width: 25%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.cont {
+    border:5px solid red;
+    width: 100%;
+    overflow:auto;
+    margin: auto;
+    background: black;
+    color: white;
+}
+
+.outras {
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+
+.outras h4 {
+    margin: 0;
+    padding: 12px;
+}
+
+.competicoes {
+    border-bottom:5px red solid;
+    border-top: 5px white solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.competicoes h4 {
+    margin:0;
+    padding: 12px;
+}
+
+.boxdesc {
+    border-top: 5px white solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc {
+    width: 60%;
+    text-align: center;
+}
+
+.comp {
+    width: 30%;
+    text-align: center;
+}
+
+.comp h4{
+    padding:1px;
 }
