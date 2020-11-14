@@ -7,7 +7,7 @@
     background-size: cover;
 }
 
-.conteudo1 {
+.conteudo {
     width: 100%;
     height: 100%;
     display: flex;
@@ -15,7 +15,7 @@
     background: #000000ba;
 }
 
-.conteudo1 h1 {
+.conteudo h1 {
     width: 75%;
     margin: auto;
     text-align: center;
@@ -46,23 +46,13 @@
     align-items: center;
 }
 
-.novidades input {
-    padding: 12px;
-    border-radius: 12px;
+.novidades a {
+    color: red;
+    transition: 0.8s;
 }
 
-.novidades button {
-    padding: 12px;
-    border-radius: 10px;
-    cursor: pointer;
-    background: black;
-    color:red;
-    transition: 1s;
-}
-
-.novidades button:hover{
-    background: red;
-    color:white;
+.novidades a:hover{
+    font-size: larger;
 }
 
 /* Fim Novidades */

@@ -30,7 +30,6 @@ a {
 
 .navbar h1 {
     margin: 0;
-    float: left;
 }
 
 .textnavbar a h1 {
@@ -48,7 +47,6 @@ a {
 
 .navimg img {
     width: 70px;
-    float: left;
 }
 
 .textnavbar {
@@ -98,32 +96,33 @@ a {
 
 .info {
     width: 100%;
-    height:100%;
+    height: 100%;
     display: flex;
+    justify-content: space-between;
 }
 
 .footimg {
     width: 33%;
-    height:100%;
+    height: 100%;
     display: flex;
     align-items: center;
-}  
+}
+
+.footimg a {
+    display: flex;
+    align-items: center;
+}
 
 .footer img {
     width: 70px;
-    float: left;
-}
-
-.footer h1 {
-    float: left;
 }
 
 .footer h2 {
-    margin:0;
+    margin: 0;
 }
 
 .footer span {
-    color:white;
+    color: white;
 }
 
 .criador {
@@ -132,15 +131,20 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-evenly;
+}
+
+.criador img {
+    border-radius: 30px;
 }
 
 .redes {
     width: 33%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .redes img {
-    width:50px;
+    width: 50px;
 }
