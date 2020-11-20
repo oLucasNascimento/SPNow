@@ -16,7 +16,7 @@
     width: 80%;
     height: 80%;
     margin: auto;
-    background: #00000054;
+    background: #000000a6;
     border-radius: 50px;
     color:white;
     margin-top:50px;
@@ -46,4 +46,8 @@
 
 .foto {
     width: 25%;
+}
+
+.foto img{
+    width: 225px;
 }
