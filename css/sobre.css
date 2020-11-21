@@ -18,9 +18,10 @@
     margin: auto;
     background: #000000a6;
     border-radius: 50px;
-    color:white;
-    margin-top:50px;
+    color: white;
+    margin-top: 50px;
     margin-bottom: 50px;
+    padding: 50px 0
 }
 
 .head {
@@ -48,6 +49,6 @@
     width: 25%;
 }
 
-.foto img{
+.foto img {
     width: 225px;
 }
