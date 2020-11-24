@@ -16,7 +16,7 @@
         <div class="box">
             <div class="textnavbar">
                 <div class="navimg">
-                    <a href="home.html">
+                    <a href="index.html">
                         <img src="../img/saopaulo.png" alt="São Paulo">
                         <h1>SP <span>Now</span></h1>
                     </a>
@@ -24,7 +24,7 @@
             </div>
             <div class="login_cadastro">
                 <ul>
-                    <li><a href="home.html">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="login.html" class="current">Login</a></li>
                     <li><a href="cadastro.html">Cadastro</a></li>
                 </ul>
@@ -41,14 +41,15 @@
                 <div class="cima">
                     <h1>LOGIN</h1>
                 </div>
-
-                <div class="conteudo">
-                    <h2>EMAIL</h2>
-                    <input type="email" id="email">
-                    <h2>SENHA</h2>
-                    <input type="password" id="senha"><br>
-                    <button onclick="entrar()">ENTRAR</button>
-                </div>
+                <form id="form_login" method="post" onsubmit="return entrar()">
+                    <div class="conteudo">
+                        <h2>EMAIL</h2>
+                        <input type="email" name="login">
+                        <h2>SENHA</h2>
+                        <input type="password" name="senha"><br>
+                        <button type="submit">ENTRAR</button>
+                    </div>
+                </form>
 
                 <div class="outros">
                     <h3><a href="cadastro.html">Não é cadastrado? Cadastre-se aqui!</a></h3>
@@ -60,3 +61,34 @@
 </body>
 
 </html>
+<script>
+    function entrar() {
+        var formulario = new URLSearchParams(new FormData(form_login));
+        fetch("/usuarios/autenticar", {
+            method: "POST",
+            body: formulario
+        }).then(resposta => {
+
+            if (resposta.ok) {
+
+                resposta.json().then(json => {
+
+                    sessionStorage.login_usuario_meuapp = json.login;
+                    sessionStorage.nome_usuario_meuapp = json.nome;
+
+                    window.location.href = 'sobre.html';
+                });
+
+            } else {
+
+                console.log('Erro de login!');
+
+                resposta.text().then(texto => {
+                    console.error(texto);
+                });
+            }
+        });
+
+        return false;
+    }
+</script>

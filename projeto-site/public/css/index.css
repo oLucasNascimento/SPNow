@@ -3,8 +3,6 @@
 .banner {
     width: 100%;
     height: 500px;
-    background: url("../img/spwall.jpg") no-repeat;
-    background-size: cover;
 }
 
 .conteudo {
@@ -12,7 +10,7 @@
     height: 100%;
     display: flex;
     align-items: center;
-    background: #000000ba;
+    background: #00000086;
 }
 
 .conteudo h1 {
