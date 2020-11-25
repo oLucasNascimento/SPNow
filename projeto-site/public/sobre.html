@@ -5,15 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPNow - Sobre mim</title>
-    <link rel="shortcut icon" href="../img/saopaulo.png">
-    <link rel="stylesheet" href="../css/navs.css">
-    <link rel="stylesheet" href="../css/sobre.css">
+    <link rel="shortcut icon" href="./img/saopaulo.png">
+    <link rel="stylesheet" href="./css/navs.css">
+    <link rel="stylesheet" href="./css/sobre.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
 </head>
+<script>
+    let usuario;
 
-<body>
+    verificar_autenticacao();
+</script>
+
+<body onload="verificar_autenticacao()">
     <!--Navbar-->
 
     <div class="navbar">
@@ -21,7 +26,7 @@
             <div class="textnavbar">
                 <div class="navimg">
                     <a href="index.html">
-                        <img src="../img/saopaulo.png" alt="São Paulo">
+                        <img src="./img/saopaulo.png" alt="São Paulo">
                         <h1>SP <span>Now</span></h1>
                     </a>
                 </div>
@@ -59,7 +64,7 @@
                             gostaria de seguir ao longo da vida.</p>
                     </div>
                     <div class="foto">
-                        <img src="../img/lucasantiga.png">
+                        <img src="./img/lucasantiga.png">
                     </div>
                 </div>
                 <div class="head">
@@ -67,7 +72,7 @@
                 </div>
                 <div class="boxx">
                     <div class="foto">
-                        <img src="../img/antiga.jpg"">
+                        <img src="./img/antiga.jpg"">
                     </div>
                     <div class=" text">
                         <p>Entre os anos de 2005 e 2008 o São Paulo vinha conquistando cada vez mais títulos e, apesar
@@ -98,7 +103,7 @@
                             pessoas que, assim como eu, também tem esse misto de sentimentos pelo clube. </p>
                     </div>
                     <div class="foto">
-                        <img src="../img/manos.jpg">
+                        <img src="./img/manos.jpg">
                     </div>
                 </div>
             </div>
@@ -113,7 +118,7 @@
 
                     <div class="footimg">
                         <a href="index.html">
-                            <img src="../img/saopaulo.png" alt="São Paulo">
+                            <img src="./img/saopaulo.png" alt="São Paulo">
                             <h1>SP <span>Now</span></h1>
                         </a>
                     </div>
@@ -121,7 +126,7 @@
                     <div class="criador">
                         <h2>Criador</h2>
                         <a href="sobre.html">
-                            <img src="../img/criador.jpg" alt="Criador">
+                            <img src="./img/criador.jpg" alt="Criador">
                         </a>
                     </div>
 

@@ -159,6 +159,11 @@ a {
     display: flex;
 }
 
+#form_cadastro{
+    width:100%;
+    display:flex;
+}
+
 .conteudo {
     width: 50%;
     overflow: auto;

@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPNow - Home</title>
-    <link rel="shortcut icon" href="../img/saopaulo.png">
-    <link rel="stylesheet" href="../css/navs.css">
-    <link rel="stylesheet" href="../css/index.css">
+    <link rel="shortcut icon" href="./img/saopaulo.png">
+    <link rel="stylesheet" href="./css/navs.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 
 <body>
@@ -21,7 +21,7 @@
             <div class="textnavbar">
                 <div class="navimg">
                     <a href="index.html">
-                        <img src="../img/saopaulo.png" alt="São Paulo">
+                        <img src="./img/saopaulo.png" alt="São Paulo">
                         <h1>SP <span>Now</span></h1>
                     </a>
                 </div>
@@ -55,7 +55,7 @@
     <div class="box">
         <div class="container">
             <div class="novidades">
-                <h2>Para se tornar um apoiador do portal e poder compartilhar suas experiências:</h2>
+                <h2>Para conhecer um pouco mais sobre o criador do projeto:</h2>
                 <a href="cadastro.html">
                     <h3>Faça seu cadastro</h3>
                 </a>
@@ -68,16 +68,16 @@
     <!--Mensagem-->
 
     <div class="mensagem">
-        <div class="container">
-            <h2>Aqui você pode contar alguma experiência que viveu com o clube.</h2>
-            <div class="campos">
-                <form>
-                    <input placeholder="Nome"> <br>
-                    <input type="email" placeholder="Email"> <br>
-                    <textarea cols="50" rows="8" placeholder="Digite sua Mensagem"></textarea>
-                    <br> <button type="submit">Enviar</button>
-                </form>
-            </div>
+        <div class="oficial">
+            <a  target="_blank" href="http://www.saopaulofc.net/">
+                <h2>Para conhecer o Site Oficial do clube e comprar produtos oficiais... Acesse o Site!</h2>
+                <img src="./img/st.png">
+            </a>
+        </div>
+        <div class="criador">
+            <a href="login.html">
+                <h2></h2>
+            </a>
         </div>
     </div>
 
@@ -91,7 +91,7 @@
 
                 <div class="footimg">
                     <a href="index.html">
-                        <img src="../img/saopaulo.png" alt="São Paulo">
+                        <img src="./img/saopaulo.png" alt="São Paulo">
                         <h1>SP <span>Now</span></h1>
                     </a>
                 </div>
@@ -101,7 +101,7 @@
                         <h2>Criador</h2>
                     </a>
                     <a href="sobre.html">
-                        <img src="../img/criador.jpg" alt="Criador">
+                        <img src="./img/criador.jpg" alt="Criador">
                     </a>
                 </div>
 
@@ -125,3 +125,46 @@
 </body>
 
 </html>
+<script>
+
+    var imgs = [];
+    var slider;
+    var imgAtual;
+    var maxImg;
+    var tempo;
+
+    function carregamento() {
+        var sp = 1
+        for (var posicao = 0; posicao < 5; posicao++) {
+            imgs[posicao]= new Image();
+            imgs[posicao].src = `./img/sp${sp}.jpg`;
+            sp++
+        }
+    }
+
+    function carregarIMG(img) {
+        slider.style.backgroundImage="url('"+imgs[img].src+"')";
+        slider.style.backgroundSize='cover';
+    }
+
+    function iniciar() {
+        console.log('foi')
+        carregamento();
+        imgAtual=0;
+        maxImg=imgs.length-1;
+        slider=document.getElementById("banner");
+        carregarIMG(imgAtual);
+        tempo=setInterval(troca,2700);
+    }
+    
+    function troca(){
+        imgAtual++;
+        if(imgAtual > maxImg){
+            imgAtual=0;
+        }
+        carregarIMG(imgAtual);
+
+    }
+
+    window.addEventListener("load",iniciar);
+</script>

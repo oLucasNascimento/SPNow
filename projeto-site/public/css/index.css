@@ -17,7 +17,7 @@
     width: 75%;
     margin: auto;
     text-align: center;
-    color:white;
+    color: white;
 }
 
 /* Fim Conteudo 1*/
@@ -49,7 +49,7 @@
     transition: 0.8s;
 }
 
-.novidades a:hover{
+.novidades a:hover {
     font-size: larger;
 }
 
@@ -59,47 +59,46 @@
 
 .mensagem {
     width: 100%;
-    height: 350px;
+    height: 550px;
+    display: flex;
 }
 
-.mensagem h2 {
-    text-align: center;
+.oficial {
+    width: 50%;
+    height: 100%;
+    background: black;
+    border-top: 5px red solid;
+    border-right: 5px white
 }
 
-.campos form {
+.oficial a {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-.campos input {
-    width:200px;
-    height: 20px;
-    border: 2px black solid;
-}
-
-.campos button {
-    width: 85px;
-    height: 30px;
-    cursor: pointer;
-    border-radius: 15px;
-    background: black;
-    color:red;
-    transition: 1s;
-}
-
-.campos button:hover {
-    background: red;
-    color:white;
-
-}
-
-textarea {
-    border: 2px black solid;
-}
-
-::placeholder {
+.oficial a h2 {
+    width: 55%;
     text-align: center;
+    color: white;
+}
+
+.criador {
+    width: 50%;
+    height: 100%;
+    border-top: 5px red solid;
+}
+
+.criador a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Fim Mensagem */
