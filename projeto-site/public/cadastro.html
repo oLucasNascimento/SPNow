@@ -51,16 +51,16 @@
                         <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
                             <div class="conteudo">
                                 <h2>EMAIL</h2>
-                                <input type="email" name="login">
+                                <input type="email" id="in_email" name="login">
                                 <h2>SENHA</h2>
-                                <input type="password" name="senha">
+                                <input type="password" id="in_senha" name="senha">
                             </div>
 
                             <div class="conteudo">
                                 <h2>CONFIRMAR EMAIL</h2>
-                                <input type="email">
+                                <input type="email" id="confirmacao_email">
                                 <h2>CONFIRMAR SENHA</h2>
-                                <input type="password">
+                                <input type="password" id="confirmacao_senha">
                             </div>
                     </div>
 
@@ -86,7 +86,19 @@
             body: formulario
         }).then(function (response) {
 
-            if (response.ok) {
+            var email = in_email.value == confirmacao_email.value;
+            var senha = in_senha.value == confirmacao_senha.value;
+
+            if (!email && !senha) {
+                alert("Email e Senha de confirmação estão errados!");
+            }
+            else if (!email) {
+                alert("O email de confirmação está errado!");
+            }
+            else if (!senha) {
+                alert("A senha de confirmação está errada!");
+            }
+            else if (response.ok) {
 
                 window.location.href = 'login.html';
 
