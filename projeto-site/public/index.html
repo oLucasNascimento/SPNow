@@ -69,15 +69,21 @@
 
     <div class="mensagem">
         <div class="oficial">
-            <a  target="_blank" href="http://www.saopaulofc.net/">
-                <h2>Para conhecer o Site Oficial do clube e comprar produtos oficiais... Acesse o Site!</h2>
+            <h2>Para conhecer o Site Oficial do clube e comprar produtos oficiais... Acesse o Site!</h2>
+            <a target="_blank" href="http://www.saopaulofc.net/">
                 <img src="./img/st.png">
             </a>
         </div>
-        <div class="criador">
-            <a href="login.html">
-                <h2></h2>
-            </a>
+        <div class="projeto">
+            <h2>Como tudo começou</h2>
+            <img href="sobre.html" src="./img/criador.jpg">
+            <h3>Um projeto criado por um aluno Bandtec, com o incentivo e apoio de Professores e Alunos da Instituição.
+                O projeto tem como objetivo o desenvolvimento enquanto programação, partindo do ponto de Crossover entre
+                P.I. e Socioemocional. Contar um pouco sobre o time que acompanho desde muito novo é algo prazeroso e
+                bastante satisfatório. Se deseja conhecer um pouco sobre um dos maiores clubes do Brasil, acesse a <a
+                    href="historia.html">história</a> do time.
+                <br>
+                E para conhecer um pouco sobre o desenvolvedor do projeto, <a href="sobre.html">clique aqui!</a></h3>
         </div>
     </div>
 
@@ -97,9 +103,7 @@
                 </div>
 
                 <div class="criador">
-                    <a href="sobre.html">
-                        <h2>Criador</h2>
-                    </a>
+                    <h2>Criador</h2>
                     <a href="sobre.html">
                         <img src="./img/criador.jpg" alt="Criador">
                     </a>
@@ -136,35 +140,35 @@
     function carregamento() {
         var sp = 1
         for (var posicao = 0; posicao < 5; posicao++) {
-            imgs[posicao]= new Image();
+            imgs[posicao] = new Image();
             imgs[posicao].src = `./img/sp${sp}.jpg`;
             sp++
         }
     }
 
     function carregarIMG(img) {
-        slider.style.backgroundImage="url('"+imgs[img].src+"')";
-        slider.style.backgroundSize='cover';
+        slider.style.backgroundImage = "url('" + imgs[img].src + "')";
+        slider.style.backgroundSize = 'cover';
     }
 
     function iniciar() {
         console.log('foi')
         carregamento();
-        imgAtual=0;
-        maxImg=imgs.length-1;
-        slider=document.getElementById("banner");
+        imgAtual = 0;
+        maxImg = imgs.length - 1;
+        slider = document.getElementById("banner");
         carregarIMG(imgAtual);
-        tempo=setInterval(troca,2700);
+        tempo = setInterval(troca, 2700);
     }
-    
-    function troca(){
+
+    function troca() {
         imgAtual++;
-        if(imgAtual > maxImg){
-            imgAtual=0;
+        if (imgAtual > maxImg) {
+            imgAtual = 0;
         }
         carregarIMG(imgAtual);
 
     }
 
-    window.addEventListener("load",iniciar);
+    window.addEventListener("load", iniciar);
 </script>

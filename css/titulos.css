@@ -1,0 +1,192 @@
+.inicio {
+    width: 100%;
+    height: 500px;
+    background: url("../img/trofeus.jpg") no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.623);
+    color: white;
+    border-bottom: 5px black solid;
+    display: flex;
+}
+
+.box h1 {
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+
+.textinicio {
+    width: 100%;
+    height: 240px;
+    text-align: center;
+    font-size: x-large;
+}
+
+.tudo {
+    width: 80%;
+    overflow: auto;
+    margin: auto;
+    background: #dbdbdb;
+    border: 2px black solid;
+}
+
+.titulo {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: red;
+    color: white;
+    padding: 3px 0;
+}
+
+.titulo h3 {
+    margin: 0;
+}
+
+.caixa {
+    width: 100%;
+    overflow: auto;
+    margin: auto;
+    background: black;
+    color: white;
+    padding: 3px 0;
+}
+
+.descricao {
+    width: 80%;
+    margin-left: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.descricao h3 {
+    width: 33%;
+    margin: 0;
+}
+
+.estatisticas {
+    width: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+.estatisticas h4 {
+    margin: 0;
+}
+
+.boxtrofeu {
+    width: 15%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.boxtrofeu img {
+    width: 45px;
+}
+
+.trofeu {
+    width: 100%;
+    overflow: auto;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.competicao {
+    width: 20%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.titlelist {
+    width: 30%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.temporada {
+    width: 30%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.nao_oficial {
+    width: 25%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+}
+
+.cont {
+    border:5px solid red;
+    width: 100%;
+    overflow:auto;
+    margin: auto;
+    background: black;
+    color: white;
+}
+
+.outras {
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+
+.outras h4 {
+    margin: 0;
+    padding: 12px;
+}
+
+.competicoes {
+    border-bottom:5px red solid;
+    border-top: 5px white solid;
+    display: flex;
+    justify-content: space-around;
+}
+
+.competicoes h4 {
+    margin:0;
+    padding: 12px;
+}
+
+.boxdesc {
+    border-top: 5px white solid;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.desc {
+    width: 60%;
+    text-align: center;
+}
+
+.comp {
+    width: 30%;
+    text-align: center;
+}
+
+.comp h4{
+    padding:1px;
+}

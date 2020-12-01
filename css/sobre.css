@@ -1,0 +1,54 @@
+.fundo {
+    width: 100%;
+    overflow: auto;
+    background: url(../img/sobre-morumbi.png) no-repeat;
+    background-size: cover;
+}
+
+.desfoco {
+    width: 100%;
+    height: 100%;
+    background: rgba(0 0 0 / 20%);
+    display: flex;
+}
+
+.textsobre {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    background: #000000a6;
+    border-radius: 50px;
+    color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 0
+}
+
+.head {
+    width: 100%;
+    overflow: auto;
+    text-align: center;
+}
+
+.boxx {
+    width: 85%;
+    overflow: auto;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text {
+    width: 70%;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.foto {
+    width: 25%;
+}
+
+.foto img {
+    width: 225px;
+}
